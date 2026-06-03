@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Bloquear archivos de sistema / assets no indexables
+Disallow: /img/produc_galeria/
+Disallow: /img/png_produc_inicio/
+
+# Sitemap
+Sitemap: https://aquaingenieros.com/sitemap.xml

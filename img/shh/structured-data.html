@@ -1,0 +1,251 @@
+<!--
+  ══════════════════════════════════════════════════════════════════
+  ARCHIVO: structured-data.html
+  Instrucción: Pega estos tres bloques <script type="application/ld+json">
+  dentro del <head> de index.html, antes del cierre </head>.
+  ══════════════════════════════════════════════════════════════════
+-->
+
+<!-- 1. Organización -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AquaIngenieros Perú",
+  "url": "https://aquaingenieros.com/",
+  "logo": "https://aquaingenieros.com/img/logo_aqua_ingenieros.png",
+  "description": "Empresa peruana especializada en la venta de equipos para tratamiento de aguas industriales: ósmosis inversa, ablandadores, filtros multimedia, carbón activado, desinfección UV y ozono. Envíos a todo el Perú.",
+  "telephone": "+51985300777",
+  "email": "ventas@aquaingenieros.com",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Perú"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "PE"
+  },
+  "sameAs": [],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+51985300777",
+    "contactType": "sales",
+    "availableLanguage": "Spanish"
+  }
+}
+</script>
+
+<!-- 2. Sitio web + buscador -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "AquaIngenieros Perú",
+  "url": "https://aquaingenieros.com/",
+  "description": "Catálogo de equipos para tratamiento de aguas industriales en Perú. Ósmosis inversa, ablandadores, filtros, bombas dosificadoras, UV y más.",
+  "inLanguage": "es-PE",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://aquaingenieros.com/?buscar={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<!-- 3. Catálogo de productos (ItemList) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Catálogo de productos – AquaIngenieros Perú",
+  "url": "https://aquaingenieros.com/#productos",
+  "numberOfItems": 28,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Membrana RO Suez Serie AG",
+        "description": "Membrana de ósmosis inversa TFC para agua salobre. Alto flujo y rechazo de sales superior al 99.5%. Ideal para aplicaciones industriales y comerciales.",
+        "brand": { "@type": "Brand", "name": "Suez Serie AG" },
+        "category": "Osmosis Inversa",
+        "url": "https://aquaingenieros.com/#membrana-ro-salobre-1",
+        "image": "https://aquaingenieros.com/img/produc_galeria/1_MEMBRANAS-OSMOSIS-INVERSA-AG2540TM-SUEZ-AQUANOR-ENVIOS-A-TODO-EL-PERU.jpg",
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": "AquaIngenieros Perú" } }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Membrana RO Axeon HR3",
+        "description": "Elementos RO serie HR3 con carcasa ABS, enviados secos para mayor vida útil. Ideales para sistemas de agua salobre industriales y comerciales.",
+        "brand": { "@type": "Brand", "name": "Axeon Water" },
+        "category": "Osmosis Inversa",
+        "url": "https://aquaingenieros.com/#membrana-ro-salobre-2",
+        "image": "https://aquaingenieros.com/img/produc_galeria/2_pr-Membrana-de-osmosis-inversa-RO-agua-salobre-02-b-600x600.jpg",
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": "AquaIngenieros Perú" } }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Membrana RO Canature 4040",
+        "description": "Membranas RO 4\"×40\" de alto rendimiento con resistencia mejorada a la contaminación. Para sistemas industriales de tratamiento de agua.",
+        "brand": { "@type": "Brand", "name": "Canature" },
+        "category": "Osmosis Inversa",
+        "url": "https://aquaingenieros.com/#membrana-ro-salobre-3",
+        "image": "https://aquaingenieros.com/img/produc_galeria/3_pr-Membrana-de-osmosis-inversa-RO-agua-salobre-a.jpg",
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": "AquaIngenieros Perú" } }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "Filtro de Carbón Activado Granular – GAC",
+        "description": "Filtro GAC con válvula Pentair Performa/Magnum, tanque FRP Canature y carbón Hydraffin 40N. Elimina cloro, olor y sabor para aplicaciones industriales.",
+        "brand": { "@type": "Brand", "name": "Pentair" },
+        "category": "Filtro de carbón activado granular",
+        "url": "https://aquaingenieros.com/#filtro-carbon-activado-gac",
+        "image": "https://aquaingenieros.com/img/produc_galeria/4_pr-Filtro-de-carbon-activado-granular-GAC-a.jpg",
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": "AquaIngenieros Perú" } }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Product",
+        "name": "Ablandador o Suavizador de Agua",
+        "description": "Ablandadores industriales simples o twin con válvula Pentair Logix/Magnum, tanque FRP Canature y resina Lewatit. Elimina la dureza del agua y previene el sarro.",
+        "brand": { "@type": "Brand", "name": "Pentair" },
+        "category": "Ablandador o suavizador de agua",
+        "url": "https://aquaingenieros.com/#ablandador-suavizador",
+        "image": "https://aquaingenieros.com/img/produc_galeria/5_pr-Ablandador-o-suavizador-de-agua-a.jpg",
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": "AquaIngenieros Perú" } }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "Product",
+        "name": "Válvula Automática Magnum Pentair",
+        "description": "Válvula automática Magnum Pentair para ablandadores y filtros industriales. Alta durabilidad, ciclos de regeneración programables y bajo consumo energético.",
+        "brand": { "@type": "Brand", "name": "Pentair" },
+        "category": "Válvulas o cabezales",
+        "url": "https://aquaingenieros.com/#valvula-cabezal-modelo-1",
+        "image": "https://aquaingenieros.com/img/produc_galeria/6_pr-Valvula-o-cabezal-para-ablandador-y-filtros-de-agua-03-a.jpg",
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": "AquaIngenieros Perú" } }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "Product",
+        "name": "Válvula Automática Logix Pentair",
+        "description": "Válvula automática Logix Pentair para ablandadores y filtros. Control de 5 u 8 ciclos con interfaz intuitiva. Flujo continuo hasta 25 GPM.",
+        "brand": { "@type": "Brand", "name": "Pentair" },
+        "category": "Válvulas o cabezales",
+        "url": "https://aquaingenieros.com/#valvula-cabezal-modelo-2",
+        "image": "https://aquaingenieros.com/img/produc_galeria/7_pr-Valvula-o-cabezal-para-ablandador-y-filtros-de-agua-02-a.jpg",
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": "AquaIngenieros Perú" } }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@type": "Product",
+        "name": "Válvula Automática BNT Canature",
+        "description": "Válvula automática BNT Canature upflow para filtros y ablandadores. Programación flexible por tiempo o volumen con pantalla grande de 4 líneas.",
+        "brand": { "@type": "Brand", "name": "Canature" },
+        "category": "Válvulas o cabezales",
+        "url": "https://aquaingenieros.com/#valvula-cabezal-modelo-3",
+        "image": "https://aquaingenieros.com/img/produc_galeria/8_pr-Valvula-o-cabezal-para-ablandador-y-filtros-de-agua-01-a.jpg",
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": "AquaIngenieros Perú" } }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@type": "Product",
+        "name": "Filtro Multimedia",
+        "description": "Filtro multimedia con antracita, arena, granet y grava para remoción de turbidez, hierro y sólidos. Válvula Canature y tanque FRP de alta calidad.",
+        "brand": { "@type": "Brand", "name": "Canature" },
+        "category": "Filtros multimedia",
+        "url": "https://aquaingenieros.com/#filtro-multimedia",
+        "image": "https://aquaingenieros.com/img/produc_galeria/15pr-Filtro-multimedia-a.jpg",
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": "AquaIngenieros Perú" } }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+        "@type": "Product",
+        "name": "Equipo de Desinfección UV Viqua",
+        "description": "Sistemas UV residenciales, comerciales e industriales. Destruye el 99.9% de bacterias y virus sin químicos. Longitud de onda 254 nm.",
+        "brand": { "@type": "Brand", "name": "Viqua" },
+        "category": "Equipo Ultravioleta",
+        "url": "https://aquaingenieros.com/#equipo-uv-viqua",
+        "image": "https://aquaingenieros.com/img/produc_galeria/22pr-Equipo-UV-Viqua-f.jpg",
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": "AquaIngenieros Perú" } }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+        "@type": "Product",
+        "name": "Bomba Dosificadora Walchem-Iwaki Serie EJ",
+        "description": "Bomba dosificadora económica para aplicaciones de dosificación de productos químicos en tratamiento de aguas. Diseño compacto, caudal máximo 12 lph.",
+        "brand": { "@type": "Brand", "name": "Walchem – Iwaki" },
+        "category": "Bombas dosificadoras",
+        "url": "https://aquaingenieros.com/#bomba-walchem-iwaki-ej",
+        "image": "https://aquaingenieros.com/img/produc_galeria/23pr-Bomba-dosificadora-Walchem-Iwaki-Serie-EJ-a.jpg",
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": "AquaIngenieros Perú" } }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "item": {
+        "@type": "Product",
+        "name": "Bomba Dosificadora SEKO Tekna TPG (Digital)",
+        "description": "Bomba dosificadora digital Tekna Evo SEKO con pantalla LCD y múltiples modos de operación. Dosificación exacta de cloro, antiincrustante y otros químicos.",
+        "brand": { "@type": "Brand", "name": "Seko" },
+        "category": "Bombas dosificadoras",
+        "url": "https://aquaingenieros.com/#bomba-seko-tekna-tpg",
+        "image": "https://aquaingenieros.com/img/produc_galeria/24pr-Bomba-dosificadora-SEKO-Tekna-TPG-a.jpg",
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": "AquaIngenieros Perú" } }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "item": {
+        "@type": "Product",
+        "name": "Bomba Dosificadora Blue White CHEM-FEED C-600P",
+        "description": "Bomba de diafragma CHEM-FEED C-600P de Blue White. Alta precisión, caudal 3.8 a 61.4 LPH. Para dosificación exacta y confiable en tratamiento de agua.",
+        "brand": { "@type": "Brand", "name": "Blue White" },
+        "category": "Bombas dosificadoras",
+        "url": "https://aquaingenieros.com/#bomba-bluewhite-c600p",
+        "image": "https://aquaingenieros.com/img/produc_galeria/28pr-Bomba-dosificadora-Blue-White-CHEM-FEED.jpg",
+        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": "AquaIngenieros Perú" } }
+      }
+    }
+  ]
+}
+</script>
